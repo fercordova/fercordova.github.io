@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css?family=Raleway|Roboto+Slab|Permanent+Marker&display=swap"
+rel="stylesheet">
+
+        <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!-- My own CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+    <title>SAILORS</title>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <!-- https://getbootstrap.com/docs/4.4/components/navbar -->
+    <!-- I'm using the "navbar-light" color scheme, and a custom background color, defined in my styles.css -->
+    <!-- Because the navbar has a "container" inside, it has gutters (spacing) on the left and right -->
+    <!-- https://getbootstrap.com/docs/4.4/components/navbar/#containers -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="logo.png" class="d-inline-block align-middle">
+
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <!-- The "ml-auto" means - set the left margin as high as you can, automatically -->
+                <!-- This causes the links to move to the right -->
+                <!-- https://getbootstrap.com/docs/4.4/utilities/flex/#auto-margins -->
+                <div class="navbar-nav mr-auto">
+                    <a class="nav-item nav-link" href="index.html">Home <i class="fas fa-igloo"></i> <span class="sr-only">(current)</span></a>
+                    <a class="nav-item nav-link" href="pricing.html">Our Beers</a>
+                    <a class="nav-item nav-link" href="index.html">Locations</a>
+                    <a class="nav-item nav-link" href="index.html"> Team</a>
+                    <a class="nav-item nav-link" href="index.html"">Calendar</a>
+                    <a class="nav-item nav-link" href="index.html"">Community</a>
+                    <a class="nav-item nav-link" href="store.html">Store</a>
+                    <a class="nav-item nav-link" href="index.html"">Seasonal</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <hr class="my-4">
+
+    <div class="container text-center">
+        <h1>DROP US A LINE!</h1>
+    </div>
+
+    <div class="container my-5">
+        <form action="https://formspree.io/meqadngj" method="POST">
+            <div class="form-group">
+                <label for="name">Full name</label>
+                <input type="text" class="form-control" id="name" name="name">
+            </div>
+            <div class="form-group">
+                <label for="email">Email address</label>
+                <input type="email" class="form-control" id="email" name="email">
+            
+            
+            
+            <div class="form-group">
+                <label for="exampleFormControlTextarea1">Message</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+              </div>
+            </form>
+            
+            <form>
+                <div class="form-group">
+                  <label for="exampleFormControlFile1">Example file input</label>
+                  <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                </div>
+              </form>
+        
+
+            <div class="form-group">
+                <label>Why are you reaching out</label>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="contactMethod" id="contactEmail" value="email"
+                        checked>
+                    <label class="form-check-label" for="contactEmail">
+                        I would like to start a distribution of your beers
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="contactMethod" id="contactPhone" value="phone">
+                    <label class="form-check-label" for="contactPhone">
+                        I would like to invest $$ in SAILORS BREWERY
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="contactMethod" id="contactPigeon" value="pigeon">
+                    <label class="form-check-label" for="contactPigeon">
+                        I feel lonely
+                    </label>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+    </div
+
+    <hr class="my-4">
+
+    <!-- Footer, just another grid, with a class added for custom styling -->
+    <div class="container footer">
+        <div class="row my-5">
+            <div class="col-sm-6">
+                <img src="footerlogo.png">
+            </div>
+            <div class="col-sm-3">
+                <h6>SAILORS BREWERY</h6>
+                <ul class="list-unstyled mt-3">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="pricing.html">Menu</a></li>
+                    <li><a href="soon.html">Location</a></li>
+                    <li><a href="soon.html">Team</a></li>
+                    <li><a href="soon.html">Social Media</a></li>
+                </ul>
+            </div>
+            <div class="col-sm-3">
+                <h6>ABOUT</h6>
+                <ul class="list-unstyled mt-3">
+                    <li><a href="index.html">Privacy Policy</a></li>
+                    <li><a href="soon.html">Terms and Conditions </a></li>
+                    <li><a href="soon.html">About Us</a></li>
+                    <li><a href="soon.html">Team</a></li>
+                    <li><a href="soon.html">Sitemap</a></li>
+                    <a class="badge badge-success" href="index.html">Mystery Button</a>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
